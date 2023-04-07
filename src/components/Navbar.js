@@ -3,25 +3,28 @@ import React from 'react';
 
 const About = () => {
     return (
+<div className="alone">
+      <div className="middle"> 
+        <h1>Alone World</h1>
+      </div>
+      <div className="rightside">
+        <div className="link">
+          <Link to="/">Homepage</Link>
+        </div>
+        <div className="link">
+          <Link to="/search">Search</Link>
+        </div>
+        <div className="link">
+          <Link to="/about">About us</Link>
+        </div>
+        <div className="link">
+          <Link to="/contact">Contact us</Link>
+        </div>
+      </div>
+    </div>
 
-        <nav className="navbar navbar-expand-lg navbar-light bg-dark">
-            <div className="container-fluid">
 
-                <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul className="navbar-nav">
-                    <li className="nav-item">
-                            <Link className="btn btn-outline-light mx-2" to="/">Home</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="btn btn-outline-light mx-2" to="/about">About</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="btn btn-outline-light mx-2" to="/contact">Contact</Link>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+
     );
 };
 

@@ -74,6 +74,12 @@ const CountrySearch = ({ onCountrySelect, onCountrySelect2 }) => {
           ))}
         </select>
       </div>
+    
+      <footer>
+          <div className="don"> 
+            <p>© 2023 Alone World.com All rights reserved.</p>
+          </div>
+          </footer>
     </div>
   );
 };
