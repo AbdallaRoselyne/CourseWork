@@ -1,142 +1,19 @@
-/* Navigation bar Styles */
-.alone {
-    display:flex;
-    justify-content: space-between;
-    padding: 38px;
-    background-color:plum;
-}
-
-.middle {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.9em;
-  text-transform: uppercase;
-  line-height: 1.5;
-  font-weight: bold;
-  text-shadow: 2px 2px 2px rgba(128, 0, 128, 0.747);
-  color: black;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
-
-  
-
-.rightside {
-    display: flex;   
-}
-
-.alone > .rightside> div {
-    margin-right: 20px;
-    font-size: 0.9em;
-    text-transform: uppercase;
-}
-
-.link {
-    height: 22px;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
-}
-
-.link a {
-    color: #384727;
-    text-decoration: none;
-    transition: color 0.5s;
-}
-
-.link:hover {
-    border-bottom: 1px solid black;
-}
-
-.link:hover {
-    color: black;
-}
-
-.Main{
-    display: block;
-  padding: 2px;
-  background-color:plum;
-}
-
-
 .background {
-    background-image: url("/public/woi.jpg");
-    height: 400px;
-    width: 100%;
+    min-height: 100vh;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 2px solid beige;
-}
-
-.backgroundtext {
-    top: 20%;
-    left: 20%;
-    margin: auto;
-    font-size: 6em;
-    color:white;
-    
-}
-.middle {
-    margin: 0;
-    padding: 0;
-}
-
-.button_div{
-    
-    margin: auto;
-    border: 2px solid beige;
-   
-}
-
-.button_div button{
-
-    font-size: 2em;
-    color: black;
-
-}
-
-.key {
-    
-    font-size: 2em;
-}
-
-
-.fin {
-    
-    width: 50%;
-    margin: auto; 
-    font-style: normal;
-
-}
-
-footer {
-    background-color: beige;
-    padding: 10px;
-    text-align: center;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    height: 50px;
-     }
-
-
-    
-  
-  /* Styles for screens between 768px and 1023px (tablets) */
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .backgroundtext{
-        font-size: 5px;
-    }
-    .main-content {
-        width: 80%;
-        margin: 0 auto;
-      }
-
-      .footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        height: 80px; 
-      }
+    background-size: cover;
   }
+  
+  .bg-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+  }
+  
+  /* Additional styles for responsiveness and aesthetics */
+  @media (max-width: 576px) {
+    .background h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
